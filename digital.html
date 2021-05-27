@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width= device-width, initial-scale=1.0">
+      <link rel= "stylesheet" href="digital.css">
+  </head>
+
+  <body>
+
+
+
+
+
+
+
+    <!-- Navigation -->
+      <div id="mySidenav" class="sidenav">
+        <a href="Javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+        </a>
+        <a href="https://www.instagram.com/mortalsinner._/"><img src="image/instagram.png" style="width: 20px; height: 20px;">&nbsp;Mortalsinner</a>
+        <a href="index.html"><img src="image/house.png" style="width: 20px; height: 20px;">&nbsp;Home</a>
+        <a href="about.html"><img src="image/info.png" style="width: 20px; height: 20px;">&nbsp;About</a>
+        <a href="series.html"><img src="image/apocalypse.png" style="width: 25px; height: 25px;">&nbsp;Series</a>
+      </div>
+      <span style=" margin-left: 20px;
+       font-size: 30px; color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      cursor: pointer;" onclick="openNav()">M&#9776;NU
+      </span>
+      
+      <script>
+        function openNav(){
+          document.getElementById("mySidenav").style.width ="250px";
+        }
+        function closeNav(){
+          document.getElementById("mySidenav").style.width= "0";
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+    <!-- Slide Show -->
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+       <center> <img src="image/logobaru.jpg" style="width:250px;  height: 250px;"></center>
+        <div class="text"></div>
+      </div>
+    
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <center><img src="image/sinlog.jpg" style="width:250px;  height: 250px;"></center>
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <center><img src="image/logo baru.jpg" style="width:250px; height: 250px;"></center>
+    <div class="text"></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<center>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</center>
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+
+
+
+
+    <!-- Content Title -->
+    <br><br>
+    <center><p   style="color: black; 
+      padding: 20px; 
+      background-color:white; 
+      border-radius:50px;
+      width:50%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      "> アートワーク<br>Fuction ArtWork()</p></center>
+    <br><br><br><br><br><br>
+
+
+
+
+
+    <!-- Content -->
+    <footer>
+
+      
+      <div class="content"></div>
+
+
+        <div class="site-container">
+          <div class="article-container">
+            <article class="article-card">
+              <figure class="article-image">
+                <img src="image/blamev2.jpg" alt="blame">
+              </figure>
+              <div class="article-content">
+                <a href="#" class="card-category">BlA///E</a>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <figure class="article-image">
+                <img src="image/crypto.jpg"  alt="crypto">
+              </figure>
+              <div class="article-content">
+                <a href="#" class="card-category">CRYPTO</a>
+            </article>
+
+            <article class="article-card">
+              <figure class="article-image">
+                <img src="image/blame.jpg" alt="blame">
+              </figure>
+              <div class="article-content">
+                <a href="#" class="card-category">BLAME_V1</a>  
+              </div>
+            </article>
+
+            <article class="article-card">
+              <figure class="article-image">
+                <img src="image/necro m-ncr.jpg"  alt="necro">
+              </figure>
+              <div class="article-content">
+                <a href="#" class="card-category">NECRO-MNCR</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    
+    </div>
+  </footer>    
+
+
+
+  <div class="content"></div>
+  <footer>
+
+    
+
+
+      <div class="site-container">
+        <div class="article-container">
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="image/plh.jpg" alt="plh">
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-category">PEACE LOVE HARMONY</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="image/judascontract.jpg"  alt="judas">
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-category">JUDAS CONTRACT</a>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="image/cursed.jpg" alt="cursed">
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-category">CURSED</a>  
+            </div>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="image/demon.jpg"  alt="demon">
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-category">DEMON</a>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+
+    </div>
+  
+</footer>    
+
+
+
+
+
+
+<footer>
+
+  <div class="content"></div>
+
+
+    <div class="site-container">
+      <div class="article-container">
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="image/adamrevisi.jpg" alt="adam">
+          </figure>
+          <div class="article-content">
+            <a href="#" class="card-category">ADAM</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="image/styx.jpg"  alt="styx">
+          </figure>
+          <div class="article-content">
+            <a href="#" class="card-category">STYX</a>
+        </article>
+
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="image/deathuponus.jpg" alt="death">
+          </figure>
+          <div class="article-content">
+            <a href="#" class="card-category">DEATH UPON US</a>  
+          </div>
+        </article>
+
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="image/kingslayer2.jpg"  alt="kingslayer">
+          </figure>
+          <div class="article-content">
+            <a href="#" class="card-category">
+              キングスレイヤー</a>
+          </div>
+
+
+
+
+          
+        </article>
+        
+      </div>
+    </div>
+
+  </div>
+
+
+</footer>
+
+
+
+
+
+
+<script>
+  $(".images img").click(function(){
+  $("#full-image").attr("src", $(this).attr("src"));
+  $('#image-viewer').show();
+});
+
+$("#image-viewer .close").click(function(){
+  $('#image-viewer').hide();
+});
+</script>
+
+
+ 
+
+  <!-- Footer -->
+<br><br><br><br>
+  <footer class=".ft">
+    <div class="digital">
+      <p class="dg"><a style="color: black;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         ">Copyright© Mortalsinner 2021.</a></p>
+    </div>
+  </footer>
+  <br>
+
+
+  
+</body>
+
+
